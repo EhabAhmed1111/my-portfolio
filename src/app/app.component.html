@@ -1,6 +1,8 @@
-<div class="container grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="min-h-screen min-w-screen container grid grid-cols-1 md:grid-cols-2 gap-4 bg-primary">
   <app-intro-card></app-intro-card>
-  <div>
-    
+  <app-header class="fixed backdrop-blur-sm md:backdrop-blur-none md:absolute md:top-0 md:right-0 bottom-0 z-50"></app-header>
+  <div class="relative mx-auto container flex flex-col item-center p-6 mt-2 bg-secondary border-gray-800 rounded-[30px] shadow-lg">
+
+    <router-outlet />
   </div>
 </div>

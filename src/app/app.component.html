@@ -1,14 +1,16 @@
-<div
-  class="min-h-screen min-w-screen container grid grid-cols-1 md:grid-cols-2 gap-4 bg-primary"
->
-  <app-intro-card></app-intro-card>
+<div class="bg-primary min-w-screen min-h-screen">
+
   <div
-    class="relative mx-auto container flex flex-row item-center p-6 mt-20 bg-secondary overflow-hidden border-gray-800 rounded-[30px] shadow-lg"
-  >
+  class="container mx-auto grid grid-cols-1 md:grid-cols-10 gap-0 md:gap-4"
+>
+<app-intro-card class="ml-0 md:ml-16 col-span-3 w-full max-w-[600px] md:max-w-[380px]"></app-intro-card>
+<div
+  class="relative md:ml-0 container md:mx-auto col-span-7 w-full max-w-[600px] md:max-w-[100%] flex flex-row item-center p-6 mt-10 md:mt-20 bg-secondary overflow-hidden border-gray-800 rounded-[30px] shadow-lg"
+>
   <!-- <app-header class=" backdrop-blur-sm  md:backdrop-blur-none md:absolute md:top-0 md:right-0  z-50"></app-header> -->
   <router-outlet />
   <header
-    class="fixed bottom-0 z-50 right-0 md:absolute md:top-0 md:right-0 overflow-hidden md:max-h-[50px] bg-secondary min-w-screen flex flex-row justify-center items-center gap-18 p-6 opacity-90 border-t md:border-b md:border-t-0 md:border-l md:min-w-[60%] md:p-10 md:max-w-[50%] shadow-lg border-gray-800 rounded-t-[30px] md:rounded-t-[0px] md:rounded-bl-[30px]
+  class="fixed bottom-0 z-50 right-0 md:absolute md:top-0 md:right-0 overflow-hidden md:max-h-[50px] bg-secondary min-w-screen flex flex-row justify-center items-center gap-18 p-6 opacity-90 border-t md:border-b md:border-t-0 md:border-l md:min-w-[60%] md:p-10 md:max-w-[50%] shadow-lg border-gray-800 rounded-t-[30px] md:rounded-t-[0px] md:rounded-bl-[30px]
     "
   >
   <!-- <div class="flex item-center justify-center p-2 rounded-[5px] hover:bg-gradient-to-r from-gold to-secondary">
@@ -19,11 +21,12 @@
       >Resume</a
     >
     <a routerLinkActive="!text-gold" [routerLinkActiveOptions]="{exact: true}" routerLink="/projects" class="text-not-important hover:text-gold font-semibold text-[18px]"
-      >Projects</a
+    >Projects</a
     >
     <a routerLinkActive="!text-gold" [routerLinkActiveOptions]="{exact: true}" routerLink="/contact" class="text-not-important hover:text-gold font-semibold text-[18px]"
       >Contact</a
     >
   </header>
   </div>
+</div>
 </div>

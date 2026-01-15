@@ -1,8 +1,29 @@
-<div class="min-h-screen min-w-screen container grid grid-cols-1 md:grid-cols-2 gap-4 bg-primary">
+<div
+  class="min-h-screen min-w-screen container grid grid-cols-1 md:grid-cols-2 gap-4 bg-primary"
+>
   <app-intro-card></app-intro-card>
-  <app-header class="fixed backdrop-blur-sm md:backdrop-blur-none md:absolute md:top-0 md:right-0 bottom-0 z-50"></app-header>
-  <div class="relative mx-auto container flex flex-col item-center p-6 mt-2 bg-secondary border-gray-800 rounded-[30px] shadow-lg">
+  <div
+    class="relative mx-auto container flex flex-row item-center p-6 mt-20 bg-secondary overflow-hidden border-gray-800 rounded-[30px] shadow-lg"
+  >
+  <!-- <app-header class=" backdrop-blur-sm  md:backdrop-blur-none md:absolute md:top-0 md:right-0  z-50"></app-header> -->
+  <router-outlet />
+  <header
+    class="fixed bottom-0 z-50 right-0 md:absolute md:top-0 md:right-0 overflow-hidden md:max-h-[50px] bg-secondary min-w-screen flex flex-row justify-center items-center gap-18 p-6 opacity-90 border-t md:border-b md:border-t-0 md:border-l md:min-w-[60%] md:p-10 md:max-w-[50%] shadow-lg border-gray-800 rounded-t-[30px] md:rounded-t-[0px] md:rounded-bl-[30px]
+    "
+  >
+  <!-- <div class="flex item-center justify-center p-2 rounded-[5px] hover:bg-gradient-to-r from-gold to-secondary">
+  </div> -->
 
-    <router-outlet />
+    <a routerLinkActive="!text-gold" [routerLinkActiveOptions]="{exact: true}" routerLink="/" class=" text-not-important hover:text-gold font-semibold text-[18px]">About</a>
+    <a routerLinkActive="!text-gold" [routerLinkActiveOptions]="{exact: true}" routerLink="/resume" class="text-not-important hover:text-gold font-semibold text-[18px]"
+      >Resume</a
+    >
+    <a routerLinkActive="!text-gold" [routerLinkActiveOptions]="{exact: true}" routerLink="/projects" class="text-not-important hover:text-gold font-semibold text-[18px]"
+      >Projects</a
+    >
+    <a routerLinkActive="!text-gold" [routerLinkActiveOptions]="{exact: true}" routerLink="/contact" class="text-not-important hover:text-gold font-semibold text-[18px]"
+      >Contact</a
+    >
+  </header>
   </div>
 </div>

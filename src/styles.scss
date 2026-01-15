@@ -2,19 +2,29 @@
 @use "tailwindcss";
 
 @theme {
-  // main color for all page 
+  // main color for all page
   --color-primary: #111112;
   // color for inside component
   --color-secondary: #1e1f1e;
   // color image
-  --color-accent: #343436;
+  // --color-accent: #343436;
   // this for small text
   --color-not-important: hsla(0, 0%, 84%, 0.7);
+
+  // New colors extracted from template
+  --color-surface: #2c2c2e;
+  --color-gold: #ffdb70;
+  --color-separator: #383838;
 
   --animate-wiggle: wiggle 1s ease-in-out infinite;
 
   @keyframes wiggle {
-    0%, 100% { transform: rotate(-3deg); }
-    50% { transform: rotate(3deg); }
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
   }
 }

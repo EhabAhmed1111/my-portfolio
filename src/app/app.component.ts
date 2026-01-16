@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet, RouterLinkActive } from '@angular/router';
 import { IntroCardComponent } from './components/intro-card/intro-card.component';
-import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',

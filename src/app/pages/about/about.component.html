@@ -1,17 +1,17 @@
-<main class="flex flex-col max-w-[550px] md:max-w-screen gap-12">
+<main class="flex flex-col w-full gap-12 p-4 md:p-0">
   <!-- about me -->
-  <div class="flex flex-col max-w-[1020px] gap-6">
-    <h1 class="text-4xl font-bold text-white">About Me</h1>
+  <div class="flex flex-col w-full gap-6">
+    <h1 class="text-3xl md:text-4xl font-bold text-white">About Me</h1>
     <!-- divider -->
     <div
-      class="bg-gradient-to-r from-gold to-gold-darker rounded-full border border-[2px] border-gold h-[6px] w-[8%]"
+      class="bg-gradient-to-r from-gold to-gold-darker rounded-full border border-[2px] border-gold h-[6px] w-[20%] md:w-[8%]"
     ></div>
     <div class="flex flex-col gap-4">
-      <p class="text-not-important text-[20px]">
+      <p class="text-not-important text-[18px] md:text-[20px]">
         Hi, I'm a Full Stack Developer from Egypt with a passion for creating
         innovative and user-friendly web applications.
       </p>
-      <p class="text-not-important text-[20px]">
+      <p class="text-not-important text-[18px] md:text-[20px]">
         I am skilled in building web applications using Angular and Spring
         Framework. Experienced in developing complete projects that demonstrate
         strong problem- solving, clean coding, and a solid understanding of
@@ -22,12 +22,12 @@
   </div>
 
   <!-- skills -->
-  <div class="flex flex-col max-w-[1020px] gap-10">
-    <h1 class="text-4xl font-bold text-white">What I Do</h1>
+  <div class="flex flex-col w-full gap-10">
+    <h1 class="text-3xl md:text-4xl font-bold text-white">What I Do</h1>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div
-        class="flex flex-row gap-6 p-6 bg-secondary-lighter rounded-[30px] border border-[2px] border-gray-800 shadow-lg shadow-lg"
+        class="flex flex-row gap-6 p-6 bg-secondary-lighter rounded-[30px] border border-[2px] border-gray-800 shadow-lg"
       >
         <div>
           <svg
@@ -52,14 +52,14 @@
           </svg>
         </div>
         <div class="flex flex-col gap-2">
-          <h1 class="text-white text-[26px] font-bold">Back-end Developer</h1>
-          <p class="text-not-important text-[22px]">
+          <h1 class="text-white text-[22px] md:text-[26px] font-bold">Back-end Developer</h1>
+          <p class="text-not-important text-[18px] md:text-[22px]">
             Scalable and secure back-end development
           </p>
         </div>
       </div>
       <div
-        class="flex flex-row gap-6 p-6 bg-secondary-lighter rounded-[30px] border border-[2px] border-gray-800 shadow-lg shadow-lg"
+        class="flex flex-row gap-6 p-6 bg-secondary-lighter rounded-[30px] border border-[2px] border-gray-800 shadow-lg"
       >
         <div>
           <svg
@@ -84,15 +84,15 @@
           </svg>
         </div>
         <div class="flex flex-col gap-2">
-          <h1 class="text-white text-[26px] font-bold">Front-end Developer</h1>
-          <p class="text-not-important text-[22px]">
+          <h1 class="text-white text-[22px] md:text-[26px] font-bold">Front-end Developer</h1>
+          <p class="text-not-important text-[18px] md:text-[22px]">
             User-friendly and responsive front-end development
           </p>
         </div>
       </div>
 
       <div
-        class="flex flex-row gap-6 p-6 bg-secondary-lighter rounded-[30px] border border-[2px] border-gray-800 shadow-lg shadow-lg"
+        class="flex flex-row gap-6 p-6 bg-secondary-lighter rounded-[30px] border border-[2px] border-gray-800 shadow-lg"
       >
         <div
           class="max-w-[70px] max-h-[70px] rounded-full p-6 flex flex-col gap-2 items-center justify-center"
@@ -104,15 +104,15 @@
           />
         </div>
         <div class="flex flex-col gap-2">
-          <h1 class="text-white text-[26px] font-bold">Android Developer</h1>
-          <p class="text-not-important text-[22px]">
+          <h1 class="text-white text-[22px] md:text-[26px] font-bold">Android Developer</h1>
+          <p class="text-not-important text-[18px] md:text-[22px]">
             developer of applications for Android
           </p>
         </div>
       </div>
 
       <div
-        class="flex flex-row gap-6 p-6 bg-secondary-lighter rounded-[30px] border border-[2px] border-gray-800 shadow-lg shadow-lg"
+        class="flex flex-row gap-6 p-6 bg-secondary-lighter rounded-[30px] border border-[2px] border-gray-800 shadow-lg"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -136,8 +136,8 @@
         </svg>
 
         <div class="flex flex-col gap-2">
-          <h1 class="text-white text-[26px] font-bold">Full-Stack Developer</h1>
-          <p class="text-not-important text-[22px]">
+          <h1 class="text-white text-[22px] md:text-[26px] font-bold">Full-Stack Developer</h1>
+          <p class="text-not-important text-[18px] md:text-[22px]">
             highly skilled in full-stack development
           </p>
         </div>
@@ -145,17 +145,17 @@
     </div>
   </div>
 
-  <h1 class="text-4xl font-bold text-white">Testimonials</h1>
+  <h1 class="text-3xl md:text-4xl font-bold text-white">Testimonials</h1>
   <div
-    class="flex flex-row max-w-[1020px] gap-6 overflow-x-auto pb-6 testimonials-scroll"
+    class="flex flex-row w-full gap-6 overflow-x-auto pb-6 testimonials-scroll snap-x"
   >
     <!-- when click it will show pop up for full testimonials -->
     <div
-      class="flex flex-col gap-4 p-6 rounded-[30px] bg-secondary-lighter border-2 border-gray-800 shadow-lg min-w-[400px] max-w-[400px] max-h-[200px] overflow-hidden"
+      class="flex flex-col gap-4 p-6 rounded-[30px] bg-secondary-lighter border-2 border-gray-800 shadow-lg min-w-[300px] md:min-w-[400px] max-w-[300px] md:max-w-[400px] max-h-[200px] overflow-hidden snap-center"
     >
-      <h1 class="text-white text-[26px] font-bold">Daniel lewis</h1>
+      <h1 class="text-white text-[22px] md:text-[26px] font-bold">Daniel lewis</h1>
       <p
-        class="text-not-important text-[22px] overflow-hidden text-ellipsis line-clamp-2"
+        class="text-not-important text-[18px] md:text-[22px] overflow-hidden text-ellipsis line-clamp-2"
       >
         Richard was hired to create a corporate identity. We were very pleased
         with the work done. She has a lot of experience and is very concerned
@@ -165,11 +165,11 @@
       </p>
     </div>
     <div
-      class="flex flex-col gap-4 p-6 rounded-[30px] bg-secondary-lighter border-2 border-gray-800 shadow-lg min-w-[400px] max-w-[400px] max-h-[200px] overflow-hidden"
+      class="flex flex-col gap-4 p-6 rounded-[30px] bg-secondary-lighter border-2 border-gray-800 shadow-lg min-w-[300px] md:min-w-[400px] max-w-[300px] md:max-w-[400px] max-h-[200px] overflow-hidden snap-center"
     >
-      <h1 class="text-white text-[26px] font-bold">Daniel lewis</h1>
+      <h1 class="text-white text-[22px] md:text-[26px] font-bold">Daniel lewis</h1>
       <p
-        class="text-not-important text-[22px] overflow-hidden text-ellipsis line-clamp-2"
+        class="text-not-important text-[18px] md:text-[22px] overflow-hidden text-ellipsis line-clamp-2"
       >
         Richard was hired to create a corporate identity. We were very pleased
         with the work done. She has a lot of experience and is very concerned
@@ -179,11 +179,11 @@
       </p>
     </div>
     <div
-      class="flex flex-col gap-4 p-6 rounded-[30px] bg-secondary-lighter border-2 border-gray-800 shadow-lg min-w-[400px] max-w-[400px] max-h-[200px] overflow-hidden"
+      class="flex flex-col gap-4 p-6 rounded-[30px] bg-secondary-lighter border-2 border-gray-800 shadow-lg min-w-[300px] md:min-w-[400px] max-w-[300px] md:max-w-[400px] max-h-[200px] overflow-hidden snap-center"
     >
-      <h1 class="text-white text-[26px] font-bold">Daniel lewis</h1>
+      <h1 class="text-white text-[22px] md:text-[26px] font-bold">Daniel lewis</h1>
       <p
-        class="text-not-important text-[22px] overflow-hidden text-ellipsis line-clamp-2"
+        class="text-not-important text-[18px] md:text-[22px] overflow-hidden text-ellipsis line-clamp-2"
       >
         Richard was hired to create a corporate identity. We were very pleased
         with the work done. She has a lot of experience and is very concerned
@@ -193,11 +193,11 @@
       </p>
     </div>
     <div
-      class="flex flex-col gap-4 p-6 rounded-[30px] bg-secondary-lighter border-2 border-gray-800 shadow-lg min-w-[400px] max-w-[400px] max-h-[200px] overflow-hidden"
+      class="flex flex-col gap-4 p-6 rounded-[30px] bg-secondary-lighter border-2 border-gray-800 shadow-lg min-w-[300px] md:min-w-[400px] max-w-[300px] md:max-w-[400px] max-h-[200px] overflow-hidden snap-center"
     >
-      <h1 class="text-white text-[26px] font-bold">Daniel lewis</h1>
+      <h1 class="text-white text-[22px] md:text-[26px] font-bold">Daniel lewis</h1>
       <p
-        class="text-not-important text-[22px] overflow-hidden text-ellipsis line-clamp-2"
+        class="text-not-important text-[18px] md:text-[22px] overflow-hidden text-ellipsis line-clamp-2"
       >
         Richard was hired to create a corporate identity. We were very pleased
         with the work done. She has a lot of experience and is very concerned
@@ -207,11 +207,11 @@
       </p>
     </div>
     <div
-      class="flex flex-col gap-4 p-6 rounded-[30px] bg-secondary-lighter border-2 border-gray-800 shadow-lg min-w-[400px] max-w-[400px] max-h-[200px] overflow-hidden"
+      class="flex flex-col gap-4 p-6 rounded-[30px] bg-secondary-lighter border-2 border-gray-800 shadow-lg min-w-[300px] md:min-w-[400px] max-w-[300px] md:max-w-[400px] max-h-[200px] overflow-hidden snap-center"
     >
-      <h1 class="text-white text-[26px] font-bold">Daniel lewis</h1>
+      <h1 class="text-white text-[22px] md:text-[26px] font-bold">Daniel lewis</h1>
       <p
-        class="text-not-important text-[22px] overflow-hidden text-ellipsis line-clamp-2"
+        class="text-not-important text-[18px] md:text-[22px] overflow-hidden text-ellipsis line-clamp-2"
       >
         Richard was hired to create a corporate identity. We were very pleased
         with the work done. She has a lot of experience and is very concerned
@@ -223,7 +223,7 @@
   </div>
 
   <div class="flex flex-col gap-6">
-    <h1 class="text-4xl font-bold text-white">Contact Me</h1>
+    <h1 class="text-3xl md:text-4xl font-bold text-white">Contact Me</h1>
     <!-- <form ngForm (ngSubmit)="onSubmit()" class="flex flex-col gap-6">
       <div class="flex flex-col md:flex-row justify-around gap-6">
         <input

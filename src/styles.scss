@@ -15,7 +15,7 @@
   // New colors extracted from template
   --color-surface: #2c2c2e;
   --color-gold: #ffdb70;
-  --color-gold-darker: #ffc005;
+  --color-gold-darker: #a88314;
   --color-separator: #383838;
 
   --animate-wiggle: wiggle 1s ease-in-out infinite;
@@ -29,4 +29,10 @@
       transform: rotate(3deg);
     }
   }
+}
+
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
 }

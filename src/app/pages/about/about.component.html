@@ -226,29 +226,28 @@
 
   <div class="flex flex-col gap-6">
     <h1 class="text-3xl md:text-4xl font-bold text-white">Contact Me</h1>
-    <form ngForm (ngSubmit)="onSubmit()" class="flex flex-col gap-6">
-      <div class="flex flex-col md:flex-row justify-around gap-6">
+    <form (ngSubmit)="onSubmit()" class="flex flex-col gap-6">
+      <div class="flex flex-col  lg:flex-row justify-around gap-6">
         <input
           type="text"
           placeholder="Full name"
-          class="p-2 min-w-[500px] p-4 text-white rounded-[20px] border border-[2px] border-not-important"
-          formControlName="name"
+          class="p-2 min-w-[100%] max-w-[100%] lg:min-w-[460px] lg:max-w-[460px] xl:min-w-[410px] xl:max-w-[410px] 2xl:min-w-[460px] 2xl:max-w-[460px] p-4 text-white rounded-[20px] border border-[2px] border-not-important"
+         
         />
         <input
           type="email"
           placeholder="Email"
-          class="p-2 min-w-[500px] p-4 text-white rounded-[20px] border border-[2px] border-not-important"
-          formControlName="email"
+          class="p-2 min-w-[100%] max-w-[100%] lg:min-w-[460px] lg:max-w-[460px] xl:min-w-[410px] xl:max-w-[410px] 2xl:min-w-[460px] 2xl:max-w-[460px] p-4 text-white rounded-[20px] border border-[2px] border-not-important"
+          
         />
       </div>
       <div class="flex">
         <textarea
-          formControlName="message"
           id=""
           cols="30"
           rows="10"
           placeholder="Message"
-          class="p-2 min-w-[550px] md:min-w-[100%] p-4 text-white rounded-[20px] border border-[2px] border-not-important"
+          class="p-2 min-w-[100%] max-w-[100%] md:min-w-[100%] md:max-w-[100%] p-4 text-white rounded-[20px] border border-[2px] border-not-important"
         ></textarea>
       </div>
       <div class="flex justify-end">
